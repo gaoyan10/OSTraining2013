@@ -1,1 +1,1 @@
-obj-y := ff.o
+#obj-y := ff.o

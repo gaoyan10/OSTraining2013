@@ -11,7 +11,8 @@
 
 #define SWAP_DEV_NO         1
 #define DISK0_DEV_NO        2
-#define MMC0_DEV_NO        3
+#define DISK2_DEV_NO		3
+//#define MMC0_DEV_NO        3
 
 void fs_init(void);
 void fs_cleanup(void);

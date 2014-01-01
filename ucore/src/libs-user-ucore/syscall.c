@@ -253,6 +253,11 @@ int sys_list_module()
 	return syscall(SYS_list_module);
 }
 
+int sys_query_module(const char* name)
+{
+	return syscall(SYS_query_module,name);
+}
+
 int
 sys_mount(const char *source, const char *target, const char *filesystemtype,
 	  const void *data)

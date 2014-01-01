@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 uCore_plus
 ==========
 
@@ -57,3 +58,7 @@ More Document
 ========
 See ucore/doc
 
+=======
+OSTraining2013
+==============
+>>>>>>> 68c57ba80f5ad200834ee1d656730bdbd9f795b8

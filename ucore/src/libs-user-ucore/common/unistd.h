@@ -68,6 +68,8 @@
 #define SYS_list_module     152
 #define SYS_mount           153
 #define SYS_umount			154
+//2010011310
+#define SYS_query_module     155
 
 /* liucong 20121109 */
 #define SYS_rf212           199

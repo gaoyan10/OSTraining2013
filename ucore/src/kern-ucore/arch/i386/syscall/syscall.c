@@ -347,6 +347,12 @@ static uint32_t sys_list_module(uint32_t arg[])
 	return 0;
 }
 
+static uint32_t sys_query_module(uint32_t arg[])
+{
+	const char* name=(const char*)arg[0];
+	return find_module(name);
+}
+
 static uint32_t sys_mount(uint32_t arg[])
 {
 	const char *source = (const char *)arg[0];
@@ -412,7 +418,9 @@ static uint32_t(*syscalls[]) (uint32_t arg[]) = {
 	    [SYS_init_module] sys_init_module,
 	    [SYS_cleanup_module] sys_cleanup_module,
 	    [SYS_list_module] sys_list_module,
-	    [SYS_mount] sys_mount,[SYS_umount] sys_umount};
+	    [SYS_query_module] sys_query_module,
+	    [SYS_mount] sys_mount,[SYS_umount] sys_umount,
+};
 
 #define NUM_SYSCALLS        ((sizeof(syscalls)) / (sizeof(syscalls[0])))
 
